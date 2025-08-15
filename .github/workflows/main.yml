@@ -1,0 +1,12 @@
+name: Keep Streamlit App Awake
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'   # every 10 minutes
+
+jobs:
+  ping-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit App
+        run: curl -I https://ai-advise.streamlit.app/
