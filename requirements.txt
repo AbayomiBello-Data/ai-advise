@@ -1,4 +1,5 @@
 streamlit
+pypdf
 faiss-cpu
 langchain
 langchain-community
